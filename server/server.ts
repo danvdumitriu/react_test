@@ -11,8 +11,10 @@ app.post('/articles', bodyParser.json(), (req, res) => {
   if(!isArticle(req.body)){
     res.status(422).json({message: 'Incorrect article format'})
   }else{
-    articleList.push(req.body)
-    res.status(201).json(req.body)
+    setTimeout(() => {
+      articleList.push(req.body)
+      res.status(201).json(req.body)
+    }, 2500)
   }
 });
 
