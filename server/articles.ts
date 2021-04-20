@@ -1,4 +1,3 @@
-
 export const articleList : Array<Article> = [
   {
     title: 'Slik forsøker svindlerne å lure til seg BankID-en din',

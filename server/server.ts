@@ -1,6 +1,6 @@
 import express from 'express';
-import bodyParser from "body-parser";
-import {articleList, isArticle} from "./articles";
+import bodyParser from 'body-parser';
+import {articleList, isArticle} from './articles';
 
 const app = express();
 const PORT = 8000;
@@ -21,6 +21,3 @@ app.post('/articles', bodyParser.json(), (req, res) => {
 app.listen(PORT, () => {
   console.log(`⚡️[server]: Server is running at https://localhost:${PORT}`);
 });
-
-
-
