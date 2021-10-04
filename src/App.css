@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.MuiTable-root th, .MuiTable-root td {
+  padding: 1px 2px;
+}
+
+.MuiTable-root td input{
+  max-width: 130px;
+}
+.MuiTable-root tfoot td{
+  max-width: 130px;
+}
+
