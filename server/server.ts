@@ -1,11 +1,17 @@
 import express from 'express';
+import cors from 'cors';
 import {articleList, isArticle} from './articles';
 
 const app = express();
 const PORT = 8080;
 
+app.use(cors());
+
 app.get('/articles', (req, res) => res.json(articleList));
 
+app.options('*', cors());
+
+app.use(express.json());
 app.post('/articles', (req, res) => {
   if (!isArticle(req.body)) {
     res.status(422).json({message: 'Incorrect article format'})
