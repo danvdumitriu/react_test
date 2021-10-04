@@ -7,6 +7,8 @@ const PORT = 8080;
 
 app.use(cors());
 
+app.options('*', cors());
+
 app.get('/articles', (req, res) => res.json(articleList));
 
 app.options('*', cors());
