@@ -80,7 +80,7 @@ const App = () => {
   }
 
   useEffect(() => {
-      fetch("http://localhost:8080/articles")
+      fetch("http://wingover.no:9090/articles")
           .then(res => res.json())
           .then(
               (result) => {

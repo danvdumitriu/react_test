@@ -191,7 +191,7 @@ const EnhancedTable = ({
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(user)
     };
-    fetch('http://localhost:8080/articles', requestOptions)
+    fetch('http://wingover.no:9090/articles', requestOptions)
         .then(response => response.json())
         .then(data => console.log(data));
   }
