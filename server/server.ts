@@ -3,7 +3,7 @@ import cors from 'cors';
 import {articleList, isArticle} from './articles';
 
 const app = express();
-const PORT = 8080;
+const PORT = 9090;
 
 app.use(cors());
 
